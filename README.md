@@ -1,6 +1,7 @@
 # Dynamic Blog Application Using Node.js and EJS
 
 This project is a dynamic blog application developed using Node.js, Express.js, and EJS. The application allows users to create, view, edit, and delete blog posts. It features a responsive design, ensuring a good user experience on both desktop and mobile devices.
+**Link to access the website:** https://dynamic-blog-application-using-node-js.onrender.com
 
 ## Features
 
