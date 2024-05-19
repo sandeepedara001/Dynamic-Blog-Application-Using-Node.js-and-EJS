@@ -1,0 +1,25 @@
+<%- include("partials/header.ejs") %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/blog.css">
+</head>
+<body>
+    <div class="blog-container">
+        <% if (locals.numberOfPosts && locals.numberOfPosts > 0) { %>
+            <h1 class="blog-title">Total number of Posts: <%= numberOfPosts %></h1>
+            <% for(let index = 0; index < posts.length; index++) { %>
+                <a href="/post/<%= index + 1 %>" class="blog-link"><%= index + 1 %>. <%= posts[index].heading %></a><br>
+            <% } %>
+        <% } else { %>
+            <h1 class="blog-title">No Posts Yet!</h1>
+        <% } %>
+    </div>
+</body>
+</html>

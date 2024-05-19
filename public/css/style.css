@@ -1,0 +1,39 @@
+
+
+.centered-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    padding-top: 20vh; /* Adjust this value to push content down less */
+}
+
+
+h1 {
+    font-family: 'Roboto', sans-serif; /* Sets the font family to Roboto */
+    font-weight: 700; /* Makes the text bold */
+    font-size: 32px; /* Sets a specific font size for visibility */
+    color: #333; /* Dark grey color for the text */
+    text-align: center; /* Centers the text */
+    margin-top: 20px; /* Adds space above the header */
+    margin-bottom: 20px; /* Adds space below the header */
+    font-size: 50px;
+}
+
+button {
+    font-family: 'Lato', sans-serif; /* Sets the font family to Lato */
+    font-weight: 700; /* Bold text for better readability on the button */
+    font-size: 18px; /* Slightly larger text for button readability */
+    color: white; /* White text color for contrast */
+    background-color: #007BFF; /* Bright blue background for visibility and design */
+    border: none; /* No border for a cleaner look */
+    border-radius: 5px; /* Rounded corners for a modern, friendly touch */
+    padding: 10px 20px; /* Adequate padding for comfortable clicking */
+    cursor: pointer; /* Cursor changes to pointer to indicate clickable */
+    transition: background-color 0.3s; /* Smooth transition for hover effects */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker shade of blue on hover for interactive feedback */
+}
+

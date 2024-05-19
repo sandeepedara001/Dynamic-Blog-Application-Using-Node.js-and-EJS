@@ -1,0 +1,26 @@
+<%- include("partials/header.ejs") %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= postHeading %></title>
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/post.css">
+</head>
+<body>
+    <div class="post-container">
+        <div class="post-actions">
+            <a href="/edit/<%= postId %>" class="edit-button button">Edit</a>
+            <form action="/delete/<%= postId %>" method="POST" class="delete-form">
+                <button type="submit" class="delete-button button">Delete</button>
+            </form>
+        </div>
+        <h1 class="post-title"><%= postHeading %></h1>
+        <p class="post-content"><%= postContent %></p>
+        <a href="/blog" class="back-link">Back to Blog</a>
+    </div>
+</body>
+</html>
